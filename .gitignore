@@ -1,0 +1,14 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+
+# Virtual environments (uv creates .venv per project/stack)
+.venv/
+
+# macOS
+.DS_Store
+
+# Pulumi backup files (created during pulumi up/destroy)
+*.yaml.bak

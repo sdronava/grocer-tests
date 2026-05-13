@@ -1,0 +1,7 @@
+name: grocer-tests-test01
+runtime:
+  name: python
+  options:
+    toolchain: uv
+    virtualenv: .venv
+description: Test 01 — EC2 incident end-to-end (EC2 → CloudWatch → SNS → PagerDuty)
