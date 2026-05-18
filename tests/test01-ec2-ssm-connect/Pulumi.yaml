@@ -1,7 +1,0 @@
-name: grocer-tests-ssm
-runtime:
-  name: python
-  options:
-    toolchain: uv
-    virtualenv: .venv
-description: EC2 + SSM connectivity smoke test
