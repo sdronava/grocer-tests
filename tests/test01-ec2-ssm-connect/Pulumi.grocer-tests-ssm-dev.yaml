@@ -1,0 +1,4 @@
+config:
+  aws:profile: grocer-sso-admin
+  aws:region: us-east-1
+encryptionsalt: v1:zWj6GMzWPDw=:v1:dTMW01SYaAiuuTSl:Xw5lp4mFDbKQXfbPq6Ik4+hdJCUtmg==

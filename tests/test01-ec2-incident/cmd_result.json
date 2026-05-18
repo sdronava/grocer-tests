@@ -1,0 +1,127 @@
+{
+    "RouteTables": [
+        {
+            "Associations": [
+                {
+                    "Main": false,
+                    "RouteTableAssociationId": "rtbassoc-02db961a5b8f4cf7a",
+                    "RouteTableId": "rtb-0d37e071a0e355fdf",
+                    "SubnetId": "subnet-096af5df03a85ba06",
+                    "AssociationState": {
+                        "State": "associated"
+                    }
+                }
+            ],
+            "PropagatingVgws": [],
+            "RouteTableId": "rtb-0d37e071a0e355fdf",
+            "Routes": [
+                {
+                    "DestinationCidrBlock": "10.0.0.0/16",
+                    "GatewayId": "local",
+                    "Origin": "CreateRouteTable",
+                    "State": "active"
+                },
+                {
+                    "DestinationCidrBlock": "0.0.0.0/0",
+                    "NatGatewayId": "nat-0b039fcd5fbdfa10f",
+                    "Origin": "CreateRoute",
+                    "State": "active"
+                }
+            ],
+            "Tags": [
+                {
+                    "Key": "test",
+                    "Value": "test01"
+                },
+                {
+                    "Key": "project",
+                    "Value": "grocer-tests"
+                },
+                {
+                    "Key": "Name",
+                    "Value": "grocer-test01-private-rt"
+                },
+                {
+                    "Key": "managed-by",
+                    "Value": "pulumi"
+                }
+            ],
+            "VpcId": "vpc-0dad0adc763471a7e",
+            "OwnerId": "415091215462"
+        },
+        {
+            "Associations": [
+                {
+                    "Main": false,
+                    "RouteTableAssociationId": "rtbassoc-0bd245a4e34ce8148",
+                    "RouteTableId": "rtb-0615b71ad97887601",
+                    "SubnetId": "subnet-09ff8bbda56083759",
+                    "AssociationState": {
+                        "State": "associated"
+                    }
+                }
+            ],
+            "PropagatingVgws": [],
+            "RouteTableId": "rtb-0615b71ad97887601",
+            "Routes": [
+                {
+                    "DestinationCidrBlock": "10.0.0.0/16",
+                    "GatewayId": "local",
+                    "Origin": "CreateRouteTable",
+                    "State": "active"
+                },
+                {
+                    "DestinationCidrBlock": "0.0.0.0/0",
+                    "GatewayId": "igw-01ef1b3596310c4cb",
+                    "Origin": "CreateRoute",
+                    "State": "active"
+                }
+            ],
+            "Tags": [
+                {
+                    "Key": "Name",
+                    "Value": "grocer-test01-public-rt"
+                },
+                {
+                    "Key": "project",
+                    "Value": "grocer-tests"
+                },
+                {
+                    "Key": "managed-by",
+                    "Value": "pulumi"
+                },
+                {
+                    "Key": "test",
+                    "Value": "test01"
+                }
+            ],
+            "VpcId": "vpc-0dad0adc763471a7e",
+            "OwnerId": "415091215462"
+        },
+        {
+            "Associations": [
+                {
+                    "Main": true,
+                    "RouteTableAssociationId": "rtbassoc-0e90411031c1b0fdd",
+                    "RouteTableId": "rtb-0cee7948b3c6c974d",
+                    "AssociationState": {
+                        "State": "associated"
+                    }
+                }
+            ],
+            "PropagatingVgws": [],
+            "RouteTableId": "rtb-0cee7948b3c6c974d",
+            "Routes": [
+                {
+                    "DestinationCidrBlock": "10.0.0.0/16",
+                    "GatewayId": "local",
+                    "Origin": "CreateRouteTable",
+                    "State": "active"
+                }
+            ],
+            "Tags": [],
+            "VpcId": "vpc-0dad0adc763471a7e",
+            "OwnerId": "415091215462"
+        }
+    ]
+}

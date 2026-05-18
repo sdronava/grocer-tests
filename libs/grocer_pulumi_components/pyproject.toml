@@ -1,0 +1,13 @@
+[project]
+name = "grocer-pulumi-components"
+version = "0.1.0"
+requires-python = ">=3.12"
+dependencies = [
+    "pulumi>=3.0.0",
+    "pulumi-aws>=7.0.0",
+    "pulumi-pagerduty>=4.0.0",
+    "grocer-pulumi-resources",
+]
+
+[tool.uv.sources]
+grocer-pulumi-resources = { path = "../grocer_pulumi_resources", editable = true }

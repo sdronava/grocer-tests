@@ -1,0 +1,8 @@
+Metadata-Version: 2.4
+Name: grocer-pulumi-components
+Version: 0.1.0
+Requires-Python: >=3.12
+Requires-Dist: pulumi>=3.0.0
+Requires-Dist: pulumi-aws>=7.0.0
+Requires-Dist: pulumi-pagerduty>=4.0.0
+Requires-Dist: grocer-pulumi-resources
