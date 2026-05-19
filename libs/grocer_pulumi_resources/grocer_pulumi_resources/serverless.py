@@ -135,8 +135,8 @@ class GrocerHttpApiStage:
                     ',"routeKey":"$context.routeKey"'
                     ',"status":"$context.status"'
                     ',"responseLength":"$context.responseLength"'
-                    ',"integrationLatency":"$context.integrationLatency"'
-                    ',"responseLatency":"$context.responseLatency"}'
+                    ',"integrationLatency":$context.integrationLatency'
+                    ',"responseLatency":$context.responseLatency}'
                 ),
             )
         self.resource = aws.apigatewayv2.Stage(

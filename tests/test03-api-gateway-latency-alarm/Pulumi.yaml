@@ -1,0 +1,7 @@
+name: grocer-tests-test03
+runtime:
+  name: python
+  options:
+    toolchain: uv
+    virtualenv: .venv
+description: Test 03 — API Gateway HTTP API → Lambda with CloudWatch latency alarm by source IP

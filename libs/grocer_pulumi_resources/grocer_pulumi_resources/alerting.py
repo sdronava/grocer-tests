@@ -29,6 +29,31 @@ class GrocerSnsSubscription:
         )
 
 
+class GrocerMetricFilter:
+    def __init__(self, name: str,
+                 log_group_name: pulumi.Output[str],
+                 filter_pattern: str,
+                 metric_name: str,
+                 namespace: str,
+                 metric_value: str,
+                 unit: str = "Milliseconds",
+                 dimensions: dict | None = None,
+                 opts: pulumi.ResourceOptions | None = None):
+        self.resource = aws.cloudwatch.LogMetricFilter(
+            f"{name}-metric-filter",
+            log_group_name=log_group_name,
+            pattern=filter_pattern,
+            metric_transformation=aws.cloudwatch.LogMetricFilterMetricTransformationArgs(
+                name=metric_name,
+                namespace=namespace,
+                value=metric_value,
+                unit=unit,
+                dimensions=dimensions or {},
+            ),
+            opts=opts,
+        )
+
+
 class GrocerMetricAlarm:
     def __init__(self, name: str,
                  metric_name: str,
