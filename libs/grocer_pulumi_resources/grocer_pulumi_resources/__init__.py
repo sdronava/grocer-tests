@@ -5,6 +5,10 @@ from .networking import (
 from .compute import GrocerSecurityGroup, GrocerIamRole, GrocerInstanceProfile, GrocerInstance
 from .alerting import GrocerSnsTopic, GrocerSnsSubscription, GrocerMetricAlarm
 from .pagerduty import GrocerEscalationPolicy, GrocerPdService, GrocerPdIntegration
+from .serverless import (
+    GrocerLambdaFunction, GrocerLambdaPermission,
+    GrocerHttpApi, GrocerHttpApiIntegration, GrocerHttpApiRoute, GrocerHttpApiStage,
+)
 
 __all__ = [
     "GrocerVpc", "GrocerInternetGateway", "GrocerSubnet",
@@ -12,4 +16,6 @@ __all__ = [
     "GrocerSecurityGroup", "GrocerIamRole", "GrocerInstanceProfile", "GrocerInstance",
     "GrocerSnsTopic", "GrocerSnsSubscription", "GrocerMetricAlarm",
     "GrocerEscalationPolicy", "GrocerPdService", "GrocerPdIntegration",
+    "GrocerLambdaFunction", "GrocerLambdaPermission",
+    "GrocerHttpApi", "GrocerHttpApiIntegration", "GrocerHttpApiRoute", "GrocerHttpApiStage",
 ]

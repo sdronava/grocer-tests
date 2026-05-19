@@ -1,0 +1,7 @@
+name: grocer-tests-test02
+runtime:
+  name: python
+  options:
+    toolchain: uv
+    virtualenv: .venv
+description: Test 02 — API Gateway HTTP API → Lambda (7-second sleep)

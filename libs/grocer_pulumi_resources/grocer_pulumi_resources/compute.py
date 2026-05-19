@@ -59,6 +59,10 @@ class GrocerIamRole:
         return self.resource.id
 
     @property
+    def arn(self) -> pulumi.Output[str]:
+        return self.resource.arn
+
+    @property
     def name(self) -> pulumi.Output[str]:
         return self.resource.name
 
