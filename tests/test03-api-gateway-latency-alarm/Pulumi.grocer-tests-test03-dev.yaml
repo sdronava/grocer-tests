@@ -1,0 +1,5 @@
+encryptionsalt: v1:9Vn5qx5i7JQ=:v1:Yg07Ckm2fJQZDBBe:jKF0v/KYbhtp8W33TX1L1/FS5XvffQ==
+config:
+  aws:profile: grocer-sso-admin
+  aws:region: us-east-1
+  grocer-tests-test03:alarm_source_ip: 24.60.123.151

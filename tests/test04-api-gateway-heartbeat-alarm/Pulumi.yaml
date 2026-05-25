@@ -1,0 +1,7 @@
+name: grocer-tests-test04
+runtime:
+  name: python
+  options:
+    toolchain: uv
+    virtualenv: .venv
+description: Test 04 — API Gateway heartbeat alarm fires when a source IP stops invoking Lambda for 5 minutes
