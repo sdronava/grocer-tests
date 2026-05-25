@@ -8,4 +8,5 @@ dev = [
     "pytest>=8.0",
     "boto3>=1.34",
     "requests>=2.31",
+    "slack-sdk>=3.0",
 ]

@@ -10,7 +10,7 @@ class GrocerLambdaFunction:
                  role_arn: pulumi.Output[str],
                  timeout: int = 30,
                  memory_size: int = 128,
-                 environment: dict | None = None,
+                 environment: pulumi.Input[dict] | None = None,
                  tags: dict | None = None,
                  opts: pulumi.ResourceOptions | None = None):
         self.resource = aws.lambda_.Function(

@@ -1,0 +1,22 @@
+lambdas/workflow/dist/
+slack_app/dist/
+
+# Guard against packages accidentally installed directly into lambda src dirs
+# (build.sh installs into dist/ — these should never exist, but ignore them
+# here so a stale local install can't be committed)
+lambdas/workflow/bin/
+lambdas/workflow/lib/
+lambdas/workflow/*.dist-info/
+lambdas/workflow/*.data/
+lambdas/workflow/*.so
+lambdas/workflow/.lock
+slack_app/bin/
+slack_app/lib/
+slack_app/*.dist-info/
+slack_app/*.data/
+slack_app/*.so
+slack_app/.lock
+
+.venv/
+__pycache__/
+*.pyc

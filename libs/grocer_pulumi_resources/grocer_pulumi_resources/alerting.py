@@ -66,6 +66,7 @@ class GrocerMetricAlarm:
                  evaluation_periods: int = 1,
                  statistic: str = "Average",
                  comparison_operator: str = "GreaterThanOrEqualToThreshold",
+                 treat_missing_data: str = "notBreaching",
                  tags: dict | None = None,
                  opts: pulumi.ResourceOptions | None = None):
         self.resource = aws.cloudwatch.MetricAlarm(
@@ -82,7 +83,7 @@ class GrocerMetricAlarm:
             dimensions=dimensions,
             alarm_actions=alarm_actions,
             ok_actions=ok_actions,
-            treat_missing_data="notBreaching",
+            treat_missing_data=treat_missing_data,
             tags={**(tags or {}), "Name": f"{name}-alarm"},
             opts=opts,
         )

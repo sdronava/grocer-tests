@@ -1,6 +1,7 @@
 pyproject.toml
 grocer_pulumi_components/__init__.py
 grocer_pulumi_components/alerting.py
+grocer_pulumi_components/apigateway.py
 grocer_pulumi_components/compute.py
 grocer_pulumi_components/networking.py
 grocer_pulumi_components/pagerduty.py

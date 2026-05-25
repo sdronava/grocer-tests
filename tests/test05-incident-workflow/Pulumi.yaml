@@ -1,0 +1,7 @@
+name: grocer-tests-test05
+runtime:
+  name: python
+  options:
+    toolchain: uv
+    virtualenv: .venv
+description: Test 05 — Incident workflow on acknowledgement creates Jira ticket, Google Meet, and Slack notification
